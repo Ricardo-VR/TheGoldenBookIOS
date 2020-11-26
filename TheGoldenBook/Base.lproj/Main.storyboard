@@ -145,11 +145,21 @@
                                 <rect key="frame" x="20" y="441" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6Z-He-q64">
                                 <rect key="frame" x="20" y="505" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zt3-8U-y4U">
                                 <rect key="frame" x="88" y="639" width="238" height="54"/>
@@ -165,6 +175,19 @@
                                     <segue destination="p0R-x0-FKz" kind="show" id="Obf-yF-PMJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzi-hH-lJO">
+                                <rect key="frame" x="343" y="184" width="51" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="7L1-9b-bnG"/>
+                                    <constraint firstAttribute="height" constant="48" id="M0w-MY-vfR"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S3P-EE-FBf" kind="show" id="Xhb-Cl-GVL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IGp-Bg-5wT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -176,21 +199,24 @@
                             <constraint firstItem="Zt3-8U-y4U" firstAttribute="leading" secondItem="IGp-Bg-5wT" secondAttribute="leading" constant="88" id="BJJ-yz-JtY"/>
                             <constraint firstItem="u6Z-He-q64" firstAttribute="leading" secondItem="IGp-Bg-5wT" secondAttribute="leading" constant="20" id="HRR-aX-el0"/>
                             <constraint firstItem="IGp-Bg-5wT" firstAttribute="trailing" secondItem="Zt3-8U-y4U" secondAttribute="trailing" constant="88" id="HX7-oQ-wpd"/>
+                            <constraint firstItem="IGp-Bg-5wT" firstAttribute="trailing" secondItem="Vzi-hH-lJO" secondAttribute="trailing" constant="20" id="Mgz-Iy-8Ab"/>
                             <constraint firstItem="IGp-Bg-5wT" firstAttribute="trailing" secondItem="u6Z-He-q64" secondAttribute="trailing" constant="20" id="NZt-13-YhM"/>
                             <constraint firstItem="u6Z-He-q64" firstAttribute="top" secondItem="avA-oG-Ztj" secondAttribute="bottom" constant="30" id="UaE-oF-sKZ"/>
                             <constraint firstItem="IGp-Bg-5wT" firstAttribute="trailing" secondItem="AK1-aO-Oqs" secondAttribute="trailing" constant="132" id="VpE-cR-73q"/>
+                            <constraint firstItem="Vzi-hH-lJO" firstAttribute="top" secondItem="52q-mc-CbB" secondAttribute="bottom" constant="8" symbolic="YES" id="XhB-m1-6Nu"/>
                             <constraint firstItem="AK1-aO-Oqs" firstAttribute="top" secondItem="52q-mc-CbB" secondAttribute="bottom" constant="45" id="d9H-lA-PQy"/>
                             <constraint firstItem="avA-oG-Ztj" firstAttribute="top" secondItem="AK1-aO-Oqs" secondAttribute="bottom" constant="70" id="dMe-0c-xa7"/>
                             <constraint firstItem="IGp-Bg-5wT" firstAttribute="trailing" secondItem="avA-oG-Ztj" secondAttribute="trailing" constant="20" id="fSe-C1-Ade"/>
                             <constraint firstItem="52q-mc-CbB" firstAttribute="leading" secondItem="IGp-Bg-5wT" secondAttribute="leading" constant="20" id="i1x-b9-Inu"/>
                             <constraint firstItem="52q-mc-CbB" firstAttribute="top" secondItem="IGp-Bg-5wT" secondAttribute="top" constant="50" id="wjO-SQ-tBe"/>
+                            <constraint firstItem="Vzi-hH-lJO" firstAttribute="leading" secondItem="AK1-aO-Oqs" secondAttribute="trailing" constant="61" id="xRd-Z4-Qw0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2hq-av-gl2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fT-ce-HFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2306" y="-189"/>
+            <point key="canvasLocation" x="2305.7971014492755" y="-189.50892857142856"/>
         </scene>
         <!--Crear Cuenta View Controller-->
         <scene sceneID="ApK-12-eI7">
@@ -216,21 +242,41 @@
                                 <rect key="frame" x="20" y="328.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dls-Qd-C21">
                                 <rect key="frame" x="20" y="382.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3HU-cK-uqf">
                                 <rect key="frame" x="20" y="436.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlV-AD-4Mr">
                                 <rect key="frame" x="20" y="490.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47c-Cf-RZ4">
                                 <rect key="frame" x="88" y="554.5" width="238" height="54"/>
@@ -305,7 +351,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="6Hz-dC-oL5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal">
                                     <string key="title">CREAR
 NUEVO 
@@ -322,7 +368,7 @@ LIBRO</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="Hzb-YW-gnO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="GALERIA">
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
@@ -336,7 +382,7 @@ LIBRO</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="aGH-9J-Est"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="MI PERFIL">
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
@@ -350,7 +396,7 @@ LIBRO</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="FrD-WX-5dX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal">
                                     <string key="title">CERRAR
 SESIÓN</string>
@@ -414,11 +460,21 @@ SESIÓN</string>
                                 <rect key="frame" x="20" y="371" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7P7-SZ-u5o">
                                 <rect key="frame" x="20" y="425" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-nt-tM8">
                                 <rect key="frame" x="88" y="489" width="238" height="42"/>
@@ -472,22 +528,22 @@ SESIÓN</string>
             </objects>
             <point key="canvasLocation" x="4391" y="463"/>
         </scene>
-        <!--View Controller-->
+        <!--Acerca View Controller-->
         <scene sceneID="MRy-Mm-CFk">
             <objects>
-                <viewController id="S3P-EE-FBf" sceneMemberID="viewController">
+                <viewController id="S3P-EE-FBf" customClass="AcercaViewController" customModule="TheGoldenBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CfI-IP-t5a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-QV-wOH">
-                                <rect key="frame" x="20" y="44" width="374" height="45"/>
+                                <rect key="frame" x="20" y="88" width="374" height="45"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROYECTO DESARROLLADO POR ALUMNOS DEL TECNOLÓGICO DE MONTERREY" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duR-n5-Skl">
-                                <rect key="frame" x="20" y="109" width="374" height="88"/>
+                                <rect key="frame" x="20" y="153" width="374" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="fbm-tb-AK6"/>
                                 </constraints>
@@ -495,8 +551,8 @@ SESIÓN</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tec.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ram-14-CN8">
-                                <rect key="frame" x="20" y="237" width="374" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tec.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ram-14-CN8">
+                                <rect key="frame" x="20" y="281" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="zXC-rU-zcn"/>
                                 </constraints>
@@ -516,6 +572,7 @@ SESIÓN</string>
                             <constraint firstItem="Ram-14-CN8" firstAttribute="leading" secondItem="sFe-S8-3QL" secondAttribute="leading" constant="20" id="pg7-QP-32o"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9vT-QX-ITY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHo-xR-QuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -539,16 +596,31 @@ SESIÓN</string>
                                 <rect key="frame" x="20" y="140.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Autor" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KDY-Ha-DTf">
                                 <rect key="frame" x="20" y="182.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="AWn-IB-4Re">
                                 <rect key="frame" x="20" y="224.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ETW-2E-wXC">
                                 <rect key="frame" x="20" y="668.5" width="374" height="59"/>
@@ -556,7 +628,7 @@ SESIÓN</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-X7-oyT">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="59"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="AGREGAR FOTOS">
                                             <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
@@ -564,7 +636,7 @@ SESIÓN</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnR-B5-gY0">
                                         <rect key="frame" x="192" y="0.0" width="182" height="59"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="QUITAR FOTOS">
                                             <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
@@ -580,7 +652,7 @@ SESIÓN</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="3W3-g1-sF5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal">
                                     <string key="title">GUARDAR
 LIBRO</string>
@@ -617,10 +689,10 @@ LIBRO</string>
             </objects>
             <point key="canvasLocation" x="4513" y="-625"/>
         </scene>
-        <!--View Controller-->
+        <!--Galeria View Controller-->
         <scene sceneID="ve0-ga-FtU">
             <objects>
-                <viewController id="bJ8-Ys-al5" sceneMemberID="viewController">
+                <viewController id="bJ8-Ys-al5" customClass="GaleriaViewController" customModule="TheGoldenBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwo-ic-q2s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -632,7 +704,7 @@ LIBRO</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-uW-L6C">
-                                <rect key="frame" x="20" y="140.5" width="374" height="341"/>
+                                <rect key="frame" x="20" y="150.5" width="374" height="341"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-Cd-6Eb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="44.5"/>
@@ -690,7 +762,7 @@ LIBRO</string>
                         <viewLayoutGuide key="safeArea" id="DLr-Wr-sIu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6ak-uW-L6C" firstAttribute="top" secondItem="mfI-I8-j51" secondAttribute="bottom" constant="8" symbolic="YES" id="R0W-6y-4IU"/>
+                            <constraint firstItem="6ak-uW-L6C" firstAttribute="top" secondItem="mfI-I8-j51" secondAttribute="bottom" constant="18" id="R0W-6y-4IU"/>
                             <constraint firstItem="6ak-uW-L6C" firstAttribute="leading" secondItem="DLr-Wr-sIu" secondAttribute="leading" constant="20" id="mdZ-fz-vcF"/>
                             <constraint firstItem="mfI-I8-j51" firstAttribute="top" secondItem="DLr-Wr-sIu" secondAttribute="top" id="pA5-QO-mPf"/>
                             <constraint firstItem="mfI-I8-j51" firstAttribute="leading" secondItem="DLr-Wr-sIu" secondAttribute="leading" constant="20" id="sYs-2o-Pvf"/>
@@ -704,10 +776,10 @@ LIBRO</string>
             </objects>
             <point key="canvasLocation" x="5340.579710144928" y="45.535714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Libro View Controller-->
         <scene sceneID="nKg-js-ScM">
             <objects>
-                <viewController id="T6T-WR-8mZ" sceneMemberID="viewController">
+                <viewController id="T6T-WR-8mZ" customClass="LibroViewController" customModule="TheGoldenBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XrD-ff-6s1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -748,14 +820,15 @@ LIBRO</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-qx-CQ0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-qx-CQ0">
                                 <rect key="frame" x="105" y="799" width="204" height="54"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="MVW-5H-OM6"/>
                                     <constraint firstAttribute="height" constant="54" id="xEL-FR-BII"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="+ Agregar P+agina">
+                                <state key="normal" title="+ Agregar Página">
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
                             </button>
@@ -766,9 +839,12 @@ LIBRO</string>
                             <constraint firstItem="KbY-cL-hCo" firstAttribute="top" secondItem="N5a-TT-fNU" secondAttribute="bottom" constant="8" symbolic="YES" id="JSa-6D-nSX"/>
                             <constraint firstItem="Rnp-Xh-45G" firstAttribute="trailing" secondItem="N5a-TT-fNU" secondAttribute="trailing" constant="20" id="RGG-tg-HOE"/>
                             <constraint firstItem="Rnp-Xh-45G" firstAttribute="trailing" secondItem="KbY-cL-hCo" secondAttribute="trailing" constant="20" id="VHl-5G-myi"/>
+                            <constraint firstItem="TYC-qx-CQ0" firstAttribute="top" secondItem="KbY-cL-hCo" secondAttribute="bottom" constant="8" symbolic="YES" id="hZ1-uL-5eU"/>
                             <constraint firstItem="N5a-TT-fNU" firstAttribute="leading" secondItem="Rnp-Xh-45G" secondAttribute="leading" constant="20" id="luy-bx-oBU"/>
                             <constraint firstItem="N5a-TT-fNU" firstAttribute="top" secondItem="Rnp-Xh-45G" secondAttribute="top" id="pbE-cW-Rr1"/>
+                            <constraint firstItem="TYC-qx-CQ0" firstAttribute="leading" secondItem="Rnp-Xh-45G" secondAttribute="leading" constant="105" id="qG4-LN-CVp"/>
                             <constraint firstItem="KbY-cL-hCo" firstAttribute="leading" secondItem="Rnp-Xh-45G" secondAttribute="leading" constant="20" id="qdR-c6-jXV"/>
+                            <constraint firstItem="Rnp-Xh-45G" firstAttribute="trailing" secondItem="TYC-qx-CQ0" secondAttribute="trailing" constant="105" id="s1w-c0-M5N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z2z-H6-HFO"/>
@@ -797,11 +873,12 @@ LIBRO</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NCJ-db-MkW"/>
+        <segue reference="k8z-rE-Adz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="avatar.png" width="204" height="204"/>
         <image name="icono_libro.png" width="352" height="352"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo_app.png" width="234" height="148.32000732421875"/>
         <image name="mail" catalog="system" width="128" height="93"/>
         <image name="tec.png" width="481.92001342773438" height="481.92001342773438"/>
