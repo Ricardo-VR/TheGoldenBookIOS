@@ -526,7 +526,7 @@ SESIÓN</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnX-RD-PAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="273"/>
+            <point key="canvasLocation" x="4312" y="318"/>
         </scene>
         <!--Acerca View Controller-->
         <scene sceneID="MRy-Mm-CFk">
@@ -687,7 +687,7 @@ LIBRO</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pr-nm-Z1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="-1229"/>
+            <point key="canvasLocation" x="4312" y="-1125"/>
         </scene>
         <!--Galeria View Controller-->
         <scene sceneID="ve0-ga-FtU">
@@ -784,12 +784,12 @@ LIBRO</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiZ-qM-iog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="-577"/>
+            <point key="canvasLocation" x="4312" y="-458"/>
         </scene>
-        <!--View Controller-->
+        <!--Borrar Libro View Controller-->
         <scene sceneID="Twr-Pf-Iln">
             <objects>
-                <viewController id="BDb-U5-Afw" sceneMemberID="viewController">
+                <viewController id="BDb-U5-Afw" customClass="BorrarLibroViewController" customModule="TheGoldenBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bT5-0M-6QO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -810,8 +810,35 @@ LIBRO</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dsK-AR-lgM">
+                                        <rect key="frame" x="50" y="181.5" width="274" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrW-Pw-O7V">
+                                                <rect key="frame" x="0.0" y="0.0" width="127" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="CANCELAR">
+                                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeModal:" destination="BDb-U5-Afw" eventType="touchUpInside" id="REA-YY-FWn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wz-iS-Ngu">
+                                                <rect key="frame" x="147" y="0.0" width="127" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="ACEPTAR">
+                                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cx0-QE-eQ2"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.69839371047531507" blue="0.13608174527840233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstItem="CbE-0C-1l6" firstAttribute="leading" secondItem="JEU-Nj-fHv" secondAttribute="leading" constant="8" id="DN5-jd-rVB"/>
                                     <constraint firstAttribute="trailing" secondItem="CbE-0C-1l6" secondAttribute="trailing" constant="8" id="FQz-1Z-mYT"/>
@@ -819,6 +846,9 @@ LIBRO</string>
                                     <constraint firstAttribute="trailing" secondItem="Y74-za-fip" secondAttribute="trailing" constant="139" id="SfR-zk-jFY"/>
                                     <constraint firstItem="Y74-za-fip" firstAttribute="leading" secondItem="JEU-Nj-fHv" secondAttribute="leading" constant="139" id="cDq-5u-LOa"/>
                                     <constraint firstItem="Y74-za-fip" firstAttribute="top" secondItem="JEU-Nj-fHv" secondAttribute="top" constant="8" id="fEh-rQ-urg"/>
+                                    <constraint firstAttribute="trailing" secondItem="dsK-AR-lgM" secondAttribute="trailing" constant="50" id="hG3-C5-bXb"/>
+                                    <constraint firstItem="dsK-AR-lgM" firstAttribute="top" secondItem="CbE-0C-1l6" secondAttribute="bottom" constant="37" id="hXT-8A-Vll"/>
+                                    <constraint firstItem="dsK-AR-lgM" firstAttribute="leading" secondItem="JEU-Nj-fHv" secondAttribute="leading" constant="50" id="ysF-9x-Els"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -912,7 +942,7 @@ Fk5vbWJyZSBkZWwgbGlicm8
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.69839371047531507" blue="0.13608174527840233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstItem="PU0-gy-jzk" firstAttribute="leading" secondItem="XJo-Xr-N1C" secondAttribute="leading" constant="130" id="3aR-1c-jmy"/>
                                     <constraint firstItem="H1V-4d-VED" firstAttribute="top" secondItem="fir-pI-NJi" secondAttribute="bottom" constant="60" id="6e9-ib-Okj"/>
@@ -1138,6 +1168,9 @@ Fk5vbWJyZSBkZWwgbGlicm8
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -20,6 +20,7 @@
 		D47E308F256F700B001E2E9D /* InfoUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47E308E256F700B001E2E9D /* InfoUsuarioViewController.swift */; };
 		D4AA5A1F257079000055F7B1 /* NuevaPaginaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA5A1E257079000055F7B1 /* NuevaPaginaViewController.swift */; };
 		D4AA5A26257081D80055F7B1 /* EditarLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA5A25257081D80055F7B1 /* EditarLibroViewController.swift */; };
+		D4AA5A29257083BD0055F7B1 /* BorrarLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA5A28257083BD0055F7B1 /* BorrarLibroViewController.swift */; };
 		D4BF69F0256F7C96004A0A33 /* AcercaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF69EF256F7C96004A0A33 /* AcercaViewController.swift */; };
 		D4BF69F3256F7D03004A0A33 /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF69F2256F7D03004A0A33 /* GaleriaViewController.swift */; };
 		D4BF69F6256F7D57004A0A33 /* LibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF69F5256F7D57004A0A33 /* LibroViewController.swift */; };
@@ -51,6 +52,7 @@
 		D47E308E256F700B001E2E9D /* InfoUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUsuarioViewController.swift; sourceTree = "<group>"; };
 		D4AA5A1E257079000055F7B1 /* NuevaPaginaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaPaginaViewController.swift; sourceTree = "<group>"; };
 		D4AA5A25257081D80055F7B1 /* EditarLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarLibroViewController.swift; sourceTree = "<group>"; };
+		D4AA5A28257083BD0055F7B1 /* BorrarLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrarLibroViewController.swift; sourceTree = "<group>"; };
 		D4BF69EF256F7C96004A0A33 /* AcercaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaViewController.swift; sourceTree = "<group>"; };
 		D4BF69F2256F7D03004A0A33 /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
 		D4BF69F5256F7D57004A0A33 /* LibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				D4272057256E246B00165B3F /* SceneDelegate.swift */,
 				D4272059256E246B00165B3F /* ViewController.swift */,
 				D427205B256E246B00165B3F /* Main.storyboard */,
+				D4AA5A28257083BD0055F7B1 /* BorrarLibroViewController.swift */,
 				D4AA5A1E257079000055F7B1 /* NuevaPaginaViewController.swift */,
 				D4BF69F5256F7D57004A0A33 /* LibroViewController.swift */,
 				D4BF69F2256F7D03004A0A33 /* GaleriaViewController.swift */,
@@ -218,6 +221,7 @@
 				D4AA5A1F257079000055F7B1 /* NuevaPaginaViewController.swift in Sources */,
 				D454833D256E3F8200AE2F14 /* LoginViewController.swift in Sources */,
 				D4BF69F6256F7D57004A0A33 /* LibroViewController.swift in Sources */,
+				D4AA5A29257083BD0055F7B1 /* BorrarLibroViewController.swift in Sources */,
 				D4BF69F0256F7C96004A0A33 /* AcercaViewController.swift in Sources */,
 				D4AA5A26257081D80055F7B1 /* EditarLibroViewController.swift in Sources */,
 				D4548337256E3A0D00AE2F14 /* CrearLibroViewController.swift in Sources */,
