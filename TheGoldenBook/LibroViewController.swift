@@ -9,6 +9,7 @@ import UIKit
 
 class LibroViewController: UIViewController {
 
+    @IBOutlet weak var cvPages: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +18,7 @@ class LibroViewController: UIViewController {
         gradientLayer.colors = [UIColor.white.cgColor, UIColor.orange.cgColor]
         
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+        cvPages.backgroundView?.layer.insertSublayer(gradientLayer, at: 0)
     }
     
 

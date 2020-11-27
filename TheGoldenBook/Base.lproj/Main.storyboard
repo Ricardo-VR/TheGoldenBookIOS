@@ -1052,6 +1052,9 @@ Fk5vbWJyZSBkZWwgbGlicm8
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z2z-H6-HFO"/>
+                    <connections>
+                        <outlet property="cvPages" destination="KbY-cL-hCo" id="gds-91-4CG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ap7-dT-AZN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
